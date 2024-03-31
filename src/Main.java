@@ -1,7 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         //Задача 1
-        int[] arr = new int[]{1, 2, 3};
+        int[] arr = new int[3];
+        arr[0] = 1;
+        arr[1] = 2;
+        arr[2] = 3;
         float[] arr1 = {1.57f, 7.654f, 9.986f};
         double[] arr2 = {12.456, 56.45, 85.001, 99.25};
 
@@ -45,10 +48,9 @@ public class Main {
                 arr[i]++;
             }
             System.out.print(arr[i]);
-            if (i != arr.length) {
+            if (i != arr.length - 1) {
                 System.out.print(",");
             }
         }
-
     }
 }
